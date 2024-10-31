@@ -10,12 +10,12 @@ from iff import (
 from firing_unit import simulate_engagement
 
 # Run simulation with precomputed hostility data
-def run_simulation(radar_data: List[int], pk=0.8) -> None:
+def run_simulation(radar_data: List[str], pk=0.8) -> None:
     """Orchestrates simulation using the radar, IFF and firing unit.
     
 
     :param radar_data: Radar data object created from Radar scan output.
-    :type radar_data: object
+    :type radar_data: List[str]
     :param pk: Probability of kill, defaults to 0.8
     :type pk: float, optional
     """
