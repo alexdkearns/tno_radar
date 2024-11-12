@@ -61,9 +61,12 @@ venv or just want to get all the dependencies (not reccommended use a venv)
 
 1)
 <python3 -m venv .venv> in your terminal (windows might be slightly different)
+
 2)
 <source .venv/bin/activate> Should see (.venv) next to your user in shell.
+
 3)
 <pip install -r requirements.txt> Should be good ctypes etc is already installed
+
 4)
 <python3 simulator.py> this might just be python instead of python3 depending on what python version you have.
