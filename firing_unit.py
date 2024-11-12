@@ -19,7 +19,7 @@ lib.initialise_random()
 def simulate_engagement(pk: int) -> bool:
     """Generates random number from a uniform distribution,
     using the c library for the Mersenne Twister random number generator.
-    Checks if this number is larger or equal to the Pk and returns the boolean.
+    Checks if this number is less than or equal to the Pk. Returns Boolean.
 
     :param pk: Probability of kill.
     :type pk: int

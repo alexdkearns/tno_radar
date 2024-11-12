@@ -51,3 +51,19 @@ The simulator is a bit more of an integration test, i use pytest but i use unitt
 
 
 I don't test the random number generator itself becuase this code seems reliably and is used on many papers / is heavily cited etc.
+
+To Run the simulation:
+if you want to add different radar data you need to manually change the file paths
+that are hardcoded of course.
+If that's the case and say you just clone the repo with no anything else and
+you already have python installed and configged and let's say you also have installed
+venv or just want to get all the dependencies (not reccommended use a venv)
+
+1)
+<python3 -m venv .venv> in your terminal (windows might be slightly different)
+2)
+<source .venv/bin/activate> Should see (.venv) next to your user in shell.
+3)
+<pip install -r requirements.txt> Should be good ctypes etc is already installed
+4)
+<python3 simulator.py> this might just be python instead of python3 depending on what python version you have.

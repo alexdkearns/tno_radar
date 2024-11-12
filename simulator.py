@@ -9,7 +9,7 @@ from iff import (
 
 from firing_unit import simulate_engagement
 
-# Run simulation with precomputed hostility data
+
 def run_simulation(radar_data: List[str], pk=0.8) -> None:
     """Orchestrates simulation using the radar, IFF and firing unit.
     
@@ -58,5 +58,7 @@ def load_radar_data(filename: str) -> list[str]:
 
 # Main Execution
 if __name__ == "__main__":
+    # Load Radar Data from csv
     radar_scan = load_radar_data('radar_data.csv')
+    # Simulate on loaded radar data
     run_simulation(radar_scan)
